@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bodypoke {
+    background-image: url("../filesJ/background.gif");  
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;  
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+body.different-background {
+    background-image: none; 
+    background-color: #a75663; 
+}
+
+.pokeboton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top:7rem; 
+}
+
+button img {
+    width: 250px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+button:hover img {
+    transform: scale(1.2); 
+}
+
+.boton-nube {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+main{
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.pokemon-todos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4.5rem;
+}
+@media  screen and (min-width:470px) {
+    .pokemon-todos{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media  screen and (min-width:700px) {
+    .pokemon-todos{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+
+.pokemon-wrapper {
+    position: relative;
+    box-shadow: 0 0 1rem -1rem rgba(37, 7, 7, 0.5);
+}
+
+.pokemon {
+    background-color: white;
+    border: solid 3px black;
+    box-shadow: 0 0 5rem -1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    height: 290px;
+    width: 229.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: visible;
+}
+
+.pokemon-id-back{
+    position:absolute;
+    top: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    font-weight: 950;
+    font-family: sans-serif;
+    color: rgb(160, 160, 160);
+    letter-spacing: 0.2rem;
+    font-style: oblique;
+}
+
+.pokemon-imagen{
+    padding-inline: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.pokemon-imagen img{
+    width: 100%;
+    max-width: 13rem;
+}
+.pokemon-info {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;    
+    letter-spacing: 1rem;
+}
+
+.nombre-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pokemon-nombre {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Reggae One', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.pokeboton {
+    position:absolute; 
+    top: -4.4rem; 
+    left: -3.5rem;
+    background-color: white; 
+    border: 3px solid black; 
+    padding: 0.2rem; 
+    width: 13rem;
+    font-family: 'Lora'; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    z-index: 10; 
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 0.15rem;
+    cursor: pointer; 
+    transition: background-color 0.2s, transform 0.2s; 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pokeboton:hover {
+    transform: scale(1.02);
+}
+
+
+.normal {
+    background-color: #A8A878; /* Gris */
+}
+
+.fire {
+    background-color: #F08030; /* Naranja */
+
+}
+
+.water {
+    background-color: #6890F0; /* Azul */
+}
+
+.electric {
+    background-color: #FFD700; /* Amarillo */
+}
+
+.grass {
+    background-color: #78C850; /* Verde */
+
+}
+
+.ice {
+    background-color: #98D8D8; /* Celeste */
+
+}
+
+.fighting {
+    background-color: #C03028; /* Rojo oscuro */
+}
+
+.poison {
+    background-color: #A040A0; /* Violeta */
+
+}
+
+.ground {
+    background-color: #E0C068; /* Marrón */
+
+}
+
+.flying {
+    background-color: #A890F0; /* Morado */
+
+}
+
+.psychic {
+    background-color: #F85888; /* Rosa */
+
+}
+
+.bug {
+    background-color: #A8B820; /* Verde claro */
+
+}
+
+.rock {
+    background-color: #B8A038; /* Marrón claro */
+
+}
+
+.ghost {
+    background-color: #705898; /* Púrpura */
+
+}
+
+.dragon {
+    background-color: #7038F8; /* Azul oscuro */
+
+}
+
+.dark {
+    background-color: #705848; /* Gris oscuro */
+}
+
+.steel {
+    background-color: #B8B8D0; /* Gris claro */
+}
+
+.fairy {
+    background-color: #EE99AC; /* Rosa claro */
+
+}
+
+
+.pokemon-gif img {
+    width: 100px; /* Ajusta este tamaño según sea necesario */
+    max-width: 5rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 5.5rem;
+}
+.pokemon1 {
+    background-color: white;
+    border: solid 3px black;
+    box-shadow: 0 0 5rem -1rem;
+    position: relative;
+    isolation: isolate;
+    height: 290px;
+    width: 229.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido al final */
+    align-items: flex-end; /* Alinea contenido a la derecha */
+    padding: 0.5rem; /* Ajusta según necesites */
+    overflow: visible;
+}
+
+.poke-info {
+    position: absolute;
+    left: 0; /* Ajusta el valor de right según sea necesario */
+    bottom: 0; /* Ajusta el valor de bottom según sea necesario */
+    z-index: 1; /* Coloca el texto sobre el gif */
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem; /* Ajusta el padding según necesites */
+    line-height: 1.2;
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pokeinfo {
+    font-weight: bold; /* Hace el texto en negrita */
+}
+
+.pokeinfo1 {
+    font-weight: normal; /* Hace el texto en estilo normal */
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    padding-block: 1rem;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .5);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding-inline: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.btn-header {
+    padding: .5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+    transition: .2s;
+}
+
+.btn-header:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+}
