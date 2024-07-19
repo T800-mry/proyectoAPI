@@ -121,7 +121,7 @@ Este proyecto es una aplicación web que permite buscar recetas de comidas utili
 - Haz clic en el botón de utensilios para ver los detalles de una receta.
 
 ## Captura
-
+![Captura](https://github.com/T800-mry/proyectoAPI/blob/main/API%20Mery/assets/img/captura.jpeg)
 
 
 # ⭐ League of Legends API
